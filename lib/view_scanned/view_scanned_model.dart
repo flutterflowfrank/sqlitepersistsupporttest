@@ -1,15 +1,11 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'home_page_widget.dart' show HomePageWidget;
+import 'view_scanned_widget.dart' show ViewScannedWidget;
 import 'package:flutter/material.dart';
 
-class HomePageModel extends FlutterFlowModel<HomePageWidget> {
+class ViewScannedModel extends FlutterFlowModel<ViewScannedWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
-  // State field(s) for idToScan widget.
-  FocusNode? idToScanFocusNode;
-  TextEditingController? idToScanController;
-  String? Function(BuildContext, String?)? idToScanControllerValidator;
 
   /// Initialization and disposal methods.
 
@@ -19,8 +15,6 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
   @override
   void dispose() {
     unfocusNode.dispose();
-    idToScanFocusNode?.dispose();
-    idToScanController?.dispose();
   }
 
   /// Action blocks are added here.
